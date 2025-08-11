@@ -10,11 +10,10 @@ services:
     ports:
       - "5000:3000"
     volumes:
-      - ./backend:/app/backend
+      - ./backend:/app/backend # It creates a bind mount
     networks:
       - todo-network
     environment:
-      - NODE_ENV=development
       - MONGO_URI=${MONGO_URI}
     command: ["npm", "run", "dev"]
     depends_on:
@@ -29,7 +28,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./frontend:/app/frontend
+      - ./frontend:/app/frontend # It creates a bind mount
     networks:
       - todo-network
     depends_on:
