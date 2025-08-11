@@ -1,13 +1,19 @@
 # Containerizing Application
 
-Containerizing applications using Docker. 
+Containerizing applications using Docker.
 
+```
+docker compose up --build
+```
 
 ## Docker Container
+
 ![Containers](./screenshots/Containers.png)
 
 ## Docker Images
+
 ![Images](./screenshots/Images.png)
 
 ## Docker Volumes
+
 ![Volumes](./screenshots/Volumes.png)
